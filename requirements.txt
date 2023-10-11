@@ -1,2 +1,3 @@
 confluent-kafka==2.2.0
 faust-streaming==0.10.16
+websockets==11.0.3

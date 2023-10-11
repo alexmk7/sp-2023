@@ -36,3 +36,15 @@ services:
       - 8787:8080   
     depends_on:
       - kafka
+
+  ksql:
+      image: confluentinc/ksqldb-server:latest
+      hostname: ksqldb-server
+      container_name: ksqldb-server
+      depends_on:
+        - kafka
+      ports:
+        - 8788:8088
+      environment:
+        KSQL_LISTENERS: "http://0.0.0.0:8088"
+        KSQL_BOOTSTRAP_SERVERS: kafka:29092
