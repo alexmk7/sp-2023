@@ -5,3 +5,4 @@ pysparm~=3.5.0
 numpy~=1.26.1
 pandas~=2.1.1
 dbldatagen~=0.3.5
+apache-beam[interactive,dataframe]~=2.51.0
